@@ -11,7 +11,7 @@ const homeObjOne ={
         lightText:true,
         headLine: "IT StartUp",
         heading: "We help You to grow",
-        description: "We help you to gain your business in IT field.",
+        description: "Dummy Text!Dummy Text! Dummy Text! Dummy Text!",
         animation:img02,
         direction: false,
 };

@@ -66,28 +66,31 @@ export const NavMenu = styled.ul`
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 94vh;
         position: absolute;
         top: 80px;
         left: ${({click}) => (click ? 0 : '-100%')}; //slider command 
         opacity: 1;
         transition: all 0.5s ease;
         background: #101522;
+        margin: 0;
+        padding-left: 0;
     }
 `;
 
 export const NavItem = styled.li`
     height: 80px;
-    border-bottom: 2px;
+    border-bottom: 2px solid transparent;
 
-    &::hover{
+    &:hover{
         border-bottom: 3px solid #fff;
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
+        display: flex;
 
-        &::hover{
+        &:hover{
             border:none;
         }
     }
@@ -107,7 +110,7 @@ export const NavLink = styled(Link)`
         width: 100%;
         display: table;
 
-        &::hover{
+        &:hover{
             color: #F7F9F9 ;
             transition: all 0.3s ease;
 

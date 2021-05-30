@@ -49,22 +49,21 @@ const Footer = () =>{
                         </SocialMediaIcon>
                     </SocialMediaLogo>
                     <WebsiteRights>Oshan Devinda © 2021</WebsiteRights>
-                    <SocialMediaLogo>
-                        <SocialMediaIcons>
-                                <SocialMediaIconsLink href='/' traget="_blank" aria-label="Facebook">
-                                    <FaFacebook />
-                                </SocialMediaIconsLink>
-                                <SocialMediaIconsLink href='/' traget="_blank" aria-label="Linkedin">
-                                    <FaLinkedin />
-                                </SocialMediaIconsLink>
-                                <SocialMediaIconsLink href='/' traget="_blank" aria-label="Github">
-                                    <FaGithub/>
-                                </SocialMediaIconsLink>
-                                <SocialMediaIconsLink href='/' traget="_blank" aria-label="Hackerrank">
-                                    <FaHackerrank/>
-                                </SocialMediaIconsLink>
-                            </SocialMediaIcons>
-                    </SocialMediaLogo>
+                    <SocialMediaIcons>
+                        <SocialMediaIconsLink href='/' traget="_blank" aria-label="Facebook">
+                            <FaFacebook />
+                        </SocialMediaIconsLink>
+                        <SocialMediaIconsLink href='/' traget="_blank" aria-label="Linkedin">
+                            <FaLinkedin />
+                        </SocialMediaIconsLink>
+                        <SocialMediaIconsLink href='/' traget="_blank" aria-label="Github">
+                            <FaGithub/>
+                        </SocialMediaIconsLink>
+                        <SocialMediaIconsLink href='/' traget="_blank" aria-label="Hackerrank">
+                            <FaHackerrank/>
+                        </SocialMediaIconsLink>
+                    </SocialMediaIcons>
+                   
                 </SocialMediaWrapper>
             </SocialMedia>
         </FooterContainer>

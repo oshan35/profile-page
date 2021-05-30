@@ -1,9 +1,7 @@
 import styled,{createGlobalStyle} from 'styled-components';
-import {Button} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 *{
     box-sizing: border-box;
     margin: 0;
@@ -25,4 +23,25 @@ padding-left: 50px;
     padding-left: 30px;
 }
 `
-export const Buttons=Button;
+export const Buttons=styled.button`
+    border-radius: 4px;
+    background-color: #4B59F7;
+    white-space: nowrap;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        transition: all 0.3s ease-out;
+        background: #fff;
+        background: #0467FB;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+    }
+`;
+

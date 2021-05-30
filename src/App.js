@@ -2,7 +2,7 @@
 import './App.css';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
-import {globalStyles} from './globalStyles';
+
 import HomePage from "./pages/Homepage/HomePage";
 import Footer from "./components/Footer/Footer";
 
