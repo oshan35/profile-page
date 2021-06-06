@@ -2,7 +2,6 @@ import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import {ContactSection,ProfilePicture,ContactFormContainer,Form,FormLabel,FormInput,TextArea, FormContainer,formWrapper,FormLabelWrapper,FormInputWrapper} from './ContactForm.element'; 
 import { Container } from '../../globalStyles';
-import {profile} from '../assets/profile.json';
 
 const ContactForm = () => {
     const [state, handleSubmit] = useForm("xwkaorra");
@@ -12,7 +11,7 @@ const ContactForm = () => {
     return (
         <ContactSection>
             <Container>
-                <ProfilePicture imgStart={profile}>
+                <ProfilePicture>
                     <ContactFormContainer>
                         <Form onSubmit={handleSubmit}>
                             <FormLabelWrapper>
