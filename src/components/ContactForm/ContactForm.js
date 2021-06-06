@@ -1,6 +1,8 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
-
+import {ContactSection,ProfilePicture,ContactFormContainer,Form,FormLabel,FormInput,TextArea, FormContainer,formWrapper,FormLabelWrapper,FormInputWrapper} from './ContactForm.element'; 
+import { Container } from '../../globalStyles';
+import {profile} from '../assets/profile.json';
 
 const ContactForm = () => {
     const [state, handleSubmit] = useForm("xwkaorra");
@@ -8,33 +10,31 @@ const ContactForm = () => {
         return <p>Thanks for Joining</p>
     }
     return (
-        <form onSubmit={handleSubmit}>
-        <label htmlFor="email">
-          Email Address
-        </label>
-        <input
-          id="email"
-          type="email" 
-          name="email"
-        />
-        <ValidationError 
-          prefix="Email" 
-          field="email"
-          errors={state.errors}
-        />
-        <textarea
-          id="message"
-          name="message"
-        />
-        <ValidationError 
-          prefix="Message" 
-          field="message"
-          errors={state.errors}
-        />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
-      </form>
+        <ContactSection>
+            <Container>
+                <ProfilePicture imgStart={profile}>
+                    <ContactFormContainer>
+                        <Form onSubmit={handleSubmit}>
+                            <FormLabelWrapper>
+                                <FormLabel id="email" type="email" name="email">Email Address</FormLabel>
+                            </FormLabelWrapper>
+                            <FormInputWrapper>
+                                <FormInput id="id" type="email" name="email" />
+                                <ValidationError prefix="Email" field="email" error={state.errors} />
+                            </FormInputWrapper>
+                            <FormLabelWrapper>
+                                <FormLabel id="message" type="message" name="message">Message</FormLabel>
+                            </FormLabelWrapper>
+                            <FormInputWrapper>
+                                <TextArea ID="message" name="message"/>
+                                <ValidationError prefix="Message" field="message" error={state.errors} />
+                            </FormInputWrapper>
+                            <button type="submit" disabled={state.submitting}>submit</button>
+                        </Form>
+                    </ContactFormContainer>
+                </ProfilePicture>
+            </Container>
+        </ContactSection>
     )
 }
 

@@ -3,7 +3,7 @@ import {Nav, NavbarContainer,NavLogo,NavIcon,MobileIcon,NavMenu,NavLink,NavItem}
 import {FaBars, FaTimes} from 'react-icons/fa';
 import {IconContext} from 'react-icons/lib';
 
-const name="Oshan Devinda";
+const name="AlpahaBlue";
 
 const Navbar = () =>{
     const [click, setClick] = useState(false)
